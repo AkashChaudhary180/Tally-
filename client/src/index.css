@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #1c2b39;
+}
+
+/* The dotted "receipt leader" line between an item description and its amount */
+.leader {
+  flex: 1;
+  border-bottom: 2px dotted #d8cfbe;
+  margin: 0 0.5rem;
+  transform: translateY(-4px);
+}
+
+/* The signature stamp element — rotated, ink-stamped look */
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 2.5px solid currentColor;
+  border-radius: 4px;
+  padding: 0.35rem 0.75rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transform: rotate(-4deg);
+  position: relative;
+}
+.stamp::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  opacity: 0.35;
+}
+
+/* Subtle torn-paper edge for cards, reinforcing the "receipt" motif */
+.receipt-card {
+  background: #fff;
+  border: 1px solid #d8cfbe;
+  border-radius: 2px;
+  box-shadow: 0 1px 0 #d8cfbe, 0 2px 8px rgba(28, 43, 57, 0.06);
+}
+
+::selection {
+  background: #e8b23d;
+  color: #1c2b39;
+}
