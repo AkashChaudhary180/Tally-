@@ -4,7 +4,7 @@ import cors from "cors";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/Authroutes.js";
 import groupRoutes from "./routes/Grouproutes.js";
-import expenseRoutes from "./routes/expenseroutes.js";
+import expenseRoutes from "./routes/Expenseroutes.js";
 
 dotenv.config(); // load variables from .env into process.env
 connectDB();      // connect to MongoDB (see config/db.js)
