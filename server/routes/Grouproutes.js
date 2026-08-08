@@ -3,7 +3,7 @@ import {
   createGroup,
   getMyGroups,
   getGroupById,
-} from "../controllers/groupController.js";
+} from "../controllers/Groupcontroller.js";
 import protect from "../middleware/Authmiddleware.js";
 
 const router = express.Router();
