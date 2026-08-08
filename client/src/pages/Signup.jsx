@@ -144,7 +144,7 @@ const Signup = () => {
         </Link>
         <div className="text-center mb-8">
           <h1 className="font-display text-4xl font-semibold text-ink mb-2">
-            Open a tab
+            Get started
           </h1>
           <p className="text-ink-light text-sm">Create an account to start splitting.</p>
         </div>
